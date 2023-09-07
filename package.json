@@ -1,5 +1,6 @@
 {
-  "name": "react-task-tracker",
+  "homepage": ".",
+  "name": "bintus-store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
