@@ -1,6 +1,6 @@
 import React from 'react'
 import categoryItems from '../products_folder/categoryItems'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const CatalogScreen = () => {

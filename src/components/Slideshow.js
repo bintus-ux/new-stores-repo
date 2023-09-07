@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel, Image, Container } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 
 const Slideshow = ({ products_0 }) => {
   return (

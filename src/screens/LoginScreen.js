@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Form, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -57,7 +57,7 @@ const LoginScreen = () => {
         {loading && <Loader />}
         <Form onSubmit={submitHandler}>
           <label
-            for='email-input'
+            htmlFor='email-input'
             className='my-2'
             style={{ fontWeight: 'bold', fontSize: '20px' }}>
             Email:
@@ -76,7 +76,7 @@ const LoginScreen = () => {
           </div>
 
           <label
-            for='password-input'
+            htmlFor='password-input'
             className='my-2'
             style={{ fontWeight: 'bold', fontSize: '20px' }}>
             Password:
@@ -122,9 +122,11 @@ const LoginScreen = () => {
                   type='checkbox'
                   value=''
                   id='form1Example3'
-                  checked
+                  defaultChecked
                 />
-                <label className='form-check-label mt-2' for='form1Example3'>
+                <label
+                  className='form-check-label mt-2'
+                  htmlFor='form1Example3'>
                   {' '}
                   Remember me{' '}
                 </label>
@@ -132,7 +134,7 @@ const LoginScreen = () => {
             </div>
 
             <div className='col mt-2'>
-              <a to='/register'>Forgot password?</a>
+              <Link to='/register'>Forgot password?</Link>
             </div>
           </div>
 

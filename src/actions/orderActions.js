@@ -37,11 +37,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.post(
-      `https://bintus-ecommerce-store-application.onrender.com/api/orders`,
-      order,
-      config
-    )
+    const { data } = await axios.post(`/api/orders`, order, config)
 
     dispatch({
       type: ORDER_CREATE_SUCCESS,
@@ -74,10 +70,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(
-      `https://bintus-ecommerce-store-application.onrender.com/api/orders/${id}`,
-      config
-    )
+    const { data } = await axios.get(`/api/orders/${id}`, config)
 
     dispatch({
       type: ORDER_DETAILS_SUCCESS,
@@ -112,7 +105,7 @@ export const payOrder = (id, paymentResult) => async (dispatch, getState) => {
     }
 
     const { data } = await axios.put(
-      `https://bintus-ecommerce-store-application.onrender.com/api/orders/${id}/pay`,
+      `/api/orders/${id}/pay`,
       paymentResult,
       config
     )
@@ -149,7 +142,7 @@ export const deliverOrder = (order) => async (dispatch, getState) => {
     }
 
     const { data } = await axios.put(
-      `https://bintus-ecommerce-store-application.onrender.com/api/orders/${order._id}/deliver`,
+      `/api/orders/${order._id}/deliver`,
       {},
       config
     )
@@ -185,10 +178,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(
-      `https://bintus-ecommerce-store-application.onrender.com/api/orders/myorders`,
-      config
-    )
+    const { data } = await axios.get(`/api/orders/myorders`, config)
 
     dispatch({
       type: ORDER_LIST_MY_SUCCESS,
@@ -221,10 +211,7 @@ export const listOrders = () => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(
-      `https://bintus-ecommerce-store-application.onrender.com/api/orders`,
-      config
-    )
+    const { data } = await axios.get(`/api/orders`, config)
 
     dispatch({
       type: ORDER_LIST_SUCCESS,

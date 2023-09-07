@@ -5,59 +5,33 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className='text-lg-start bg-light'>
+    <footer className='footer text-lg-start bg-light'>
       <Container>
         <Row className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-          <Col className='me-3 d-none d-lg-block'>
+          <Col className='col-md-6'>
             <span>Get connected with us on social networks:</span>
           </Col>
           <Col className='d-flex justify-content-center '>
-            <a href='' className='me-4'>
-              <i className='fab fa-facebook-f'></i>
-            </a>
-            <a href='' className='me-4'>
-              <i className='fab fa-twitter'></i>
-            </a>
-            <a href='' className='me-4'>
-              <i className='fab fa-google'></i>
-            </a>
-            <a href='' className='me-4'>
-              <i className='fab fa-instagram'></i>
-            </a>
-            <a href='' className='me-4'>
-              <i className='fab fa-linkedin'></i>
-            </a>
-            <a href='' className='me-4'>
-              <i className='fab fa-github'></i>
-            </a>
+            <i className='fab fa-facebook-f me-4'></i>
+            <i className='fab fa-twitter me-4'></i>
+            <i className='fab fa-google me-4'></i>
+            <i className='fab fa-instagram me-4'></i>
+            <i className='fab fa-linkedin me-4'></i>
+            <i className='fab fa-github me-4'></i>
           </Col>
         </Row>
         <Row>
           <Col className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
             <p>Search</p>
-            <p>
-              <a href='#!'>Size Chart</a>
-            </p>
-            <p>
-              <a href='#!'>FAQ</a>
-            </p>
-            <p>
-              <a href='#!'>Contact Us</a>
-            </p>
+            <p>Size Chart</p>
+            <p>FAQ</p>
+            <p>Contact Us</p>
           </Col>
           <Col className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
-            <p>
-              <a href='#!'>About Us</a>
-            </p>
-            <p>
-              <a href='#!'>Privacy Policy</a>
-            </p>
-            <p>
-              <a href='#!'>Refund Policy</a>
-            </p>
-            <p>
-              <a href='#!'>Terms Of Service</a>
-            </p>
+            <p>About Us</p>
+            <p>Privacy Policy</p>
+            <p>Refund Policy</p>
+            <p>Terms Of Service</p>
           </Col>
         </Row>
         <Row>

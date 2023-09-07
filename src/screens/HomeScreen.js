@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Image } from 'react-bootstrap'
 import { products_0 } from '../products_folder/products'
 import Slideshow from '../components/Slideshow'
 import CategoryItems from '../components/CategoryItems'
@@ -12,7 +12,6 @@ const HomeScreen = () => {
 
   const fetchNewArrivalItems = async () => {
     const { data } = await axios.get('/api/categoryItems/new-arrivals')
-    console.log(data, 'new')
     setNewArrivalItems(data.data)
   }
 
@@ -102,7 +101,7 @@ const HomeScreen = () => {
                   <h4
                     style={{
                       color: 'black',
-                      width: '400px',
+                      width: '350px',
                     }}
                     className='text-capitalize my-3'>
                     {newArrival.name}
@@ -157,7 +156,7 @@ const HomeScreen = () => {
             <div className='col-md-6'>
               <form>
                 <div className='form-group'>
-                  <label for='email'>Email address</label>
+                  <label htmlFor='email'>Email address</label>
                   <input
                     type='email'
                     className='form-control'

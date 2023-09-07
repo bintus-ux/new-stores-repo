@@ -74,7 +74,7 @@ const RegisterScreen = () => {
       <Form onSubmit={submitHandler}>
         {/* Name field */}
         <label
-          for='name'
+          htmlFor='name'
           className='my-2'
           style={{ fontWeight: 'bold', fontSize: '20px' }}>
           Name:
@@ -85,7 +85,7 @@ const RegisterScreen = () => {
               type='name'
               placeholder='Enter name'
               value={name}
-              id='email-input'
+              id='name-input'
               className='input-form'
               onChange={(e) => setName(e.target.value)}
             />
@@ -93,7 +93,7 @@ const RegisterScreen = () => {
         </div>
         {/* Email field */}
         <label
-          for='email'
+          htmlFor='email'
           className='my-2'
           style={{ fontWeight: 'bold', fontSize: '20px' }}>
           Email Address:
@@ -113,7 +113,7 @@ const RegisterScreen = () => {
 
         {/* Password Field */}
         <label
-          for='password'
+          htmlFor='password'
           className='my-2'
           style={{ fontWeight: 'bold', fontSize: '20px' }}>
           Password:
@@ -154,7 +154,7 @@ const RegisterScreen = () => {
         {/* Re-enter Password Field */}
 
         <label
-          for='confirmPassword'
+          htmlFor='confirmPassword'
           className='my-2'
           style={{ fontWeight: 'bold', fontSize: '20px' }}>
           Confirm Password:

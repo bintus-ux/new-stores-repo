@@ -67,15 +67,6 @@ const Header = () => {
                 </NavDropdown>
               </Nav>
               <SearchBar navigate={navigate} />
-              {/* <Form className='d-flex'>
-                <Form.Control
-                  type='search'
-                  placeholder='search products...'
-                  aria-label='Search'
-                  style={{ height: 'auto' }}
-                />
-                <Button variant='outline-dark'>Search</Button>
-              </Form> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
           <Link to='/'>

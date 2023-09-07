@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, FormControl } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
 
 const SearchBar = ({ navigate }) => {
   const [keyword, setKeyword] = useState('')

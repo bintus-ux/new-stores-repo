@@ -29,7 +29,6 @@ export const productListReducer = (state = { data: [] }, action) => {
 }
 
 export const productDetailsReducer = (state = { productItem: {} }, action) => {
-  console.log(action.payload, 'reducer')
   switch (action.type) {
     case PRODUCT_DETAILS_REQUEST:
       return { loading: true, ...state }
@@ -43,7 +42,6 @@ export const productDetailsReducer = (state = { productItem: {} }, action) => {
 }
 
 export const searchProducts = (state = { data: [] }, action) => {
-  console.log(action.payload, 'searchReducer')
   switch (action.type) {
     case PRODUCT_SEARCH_REQUEST:
       return { loading: true, PRODUCT: [] }

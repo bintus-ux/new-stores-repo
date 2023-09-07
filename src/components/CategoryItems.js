@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel, Col, Row, Image, Container } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const CategoryItems = ({ categoryItem }) => {

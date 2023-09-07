@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import {
   Button,
@@ -174,7 +174,7 @@ const CartScreen = () => {
                   <div>
                     <h5 style={{ color: 'white' }}>Card type</h5>
                   </div>
-                  <spn>
+                  <span>
                     <i
                       className='fa-brands fa-cc-paypal fa-2xl'
                       style={{ color: 'white' }}></i>{' '}
@@ -187,7 +187,7 @@ const CartScreen = () => {
                     <i
                       className='fa-brands fa-cc-visa fa-2xl'
                       style={{ color: 'white' }}></i>
-                  </spn>
+                  </span>
                 </ListGroupItem>
                 <ListGroupItem
                   id='list-group-item-div'

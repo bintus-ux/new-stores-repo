@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
@@ -19,7 +19,7 @@ const TshirtScreen = () => {
 
   useEffect(() => {
     dispatch(listProductItems(pageNumber, category))
-  }, [dispatch, pageNumber])
+  }, [dispatch, pageNumber, category])
 
   const isFound = data?.some((tshirt) => {
     if (tshirt._id) {

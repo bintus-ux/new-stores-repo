@@ -19,7 +19,7 @@ const KnitwearScreen = () => {
 
   useEffect(() => {
     dispatch(listProductItems(pageNumber, category))
-  }, [dispatch, pageNumber])
+  }, [dispatch, pageNumber, category])
 
   const isFound = data?.some((knitWear) => {
     if (knitWear._id) {

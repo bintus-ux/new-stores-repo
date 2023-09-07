@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { PaystackButton } from 'react-paystack'
 import { Link, useParams, useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import {
   Button,
   Row,
@@ -33,20 +33,13 @@ const OrderScreen = () => {
   const { order, loading, error } = orderDetails
 
   const orderPay = useSelector((state) => state.orderPay)
-  const { loading: loadingPay, success: successPay } = orderPay
+  const { loading: loadingPay } = orderPay
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
   const orderDeliver = useSelector((state) => state.orderDeliver)
   const { loading: loadingDeliver, success: successDeliver } = orderDeliver
-
-  // if (!loading) {
-  //   order.itemsPrice = order.orderItems.reduce(
-  //     (acc, item) => acc + item.qty * item.price,
-  //     0
-  //   )
-  // }
 
   useEffect(() => {
     if (!userInfo) {
